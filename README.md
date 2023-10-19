@@ -18,15 +18,18 @@ Docker: Instruções de instalação do Docker
 
 # 2. Navegue até o diretório do projeto:
     - cd nome-do-repositorio
-
-# 3. Crie a imagem Docker executando o seguinte comando:
+    
+# 3. Instale as dependências necessárias executando o seguinte comando:
+    - docker run --rm -v $(pwd):/app composer install
+    
+# 4. Crie a imagem Docker executando o seguinte comando:
     - docker build -t nome_da_imagem .
 Substitua "nome_da_imagem" pelo nome que você deseja dar à imagem.
 
-# 4. Após a construção da imagem, execute um contêiner com o seguinte comando:
+# 5. Após a construção da imagem, execute um contêiner com o seguinte comando:
     - docker run -p 80:80 nome_da_imagem
 Isso iniciará um contêiner com o servidor web PHP e o banco de dados MySQL configurados.
 
-# 5. Acesse o servidor web em seu navegador:
+# 6. Acesse o servidor web em seu navegador:
     - http://localhost
 Agora você tem um ambiente de desenvolvimento configurado com PHP, servidor web e conexão com o banco de dados MySQL.
