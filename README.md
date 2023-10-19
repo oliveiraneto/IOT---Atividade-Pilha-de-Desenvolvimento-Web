@@ -13,13 +13,13 @@ Certifique-se de ter o Docker instalado em sua máquina antes de prosseguir.
 Docker: Instruções de instalação do Docker
 
 # Siga as etapas abaixo para configurar o ambiente de desenvolvimento:
-# 1.Clone este repositório para o seu ambiente local: 
+# 1. Clone este repositório para o seu ambiente local: 
     - git clone https://github.com/seu-usuario/nome-do-repositorio.git
 
-# 2.Navegue até o diretório do projeto:
+# 2. Navegue até o diretório do projeto:
     - cd nome-do-repositorio
 
-# 3.Crie a imagem Docker executando o seguinte comando:
+# 3. Crie a imagem Docker executando o seguinte comando:
     - docker build -t nome_da_imagem .
 Substitua "nome_da_imagem" pelo nome que você deseja dar à imagem.
 
